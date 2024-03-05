@@ -1,0 +1,120 @@
+@import "~bootstrap/scss/bootstrap"    
+
+$russian-violet: #10002bff
+$russian-violet-2: #240046ff
+$persian-indigo: #3c096cff
+$tekhelet: #5a189aff
+$french-violet: #7b2cbfff
+$amethyst: #9d4eddff
+$heliotrope: #c77dffff
+$mauve: #e0aaffff
+
+$primary-color: #000041
+$secondary-color: #321E50
+$primary-accent: #FF8000
+$secondary-accent: #FFD505
+
+
+/** Font Types **/
+.tf 
+  font-family: "Righteous", sans-serif
+  font-weight: 400
+  font-style: normal
+
+
+.qf 
+  font-family: "Caveat", cursive
+  font-optical-sizing: auto
+  font-weight: 400
+  font-style: normal
+
+/** Basic Style **/
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+#body 
+  margin: 0
+  min-width: 320px
+  width: 100%
+  min-height: 100vh
+  font-family: "Roboto", sans-serif
+  font-weight: 400
+  font-style: normal
+  background-color: $russian-violet-2
+
+
+h1 
+  font-size: 5em
+  line-height: 1.1
+
+/** Button style **/
+.bttn 
+  border-radius: 25px
+  border: 1px solid $primary-color
+  text-decoration: none
+  padding: 8px 16px
+  font-size: 1em
+  font-weight: 500
+  font-family: inherit
+  background-color: $primary-accent
+  color: $primary-color
+  cursor: pointer
+
+.bttn:hover 
+  background-color: #d36900
+  border-color: #d36900
+  
+.bttn:active 
+  background-color: #924900
+  border-color: #924900
+
+.bttn-y
+    background-color: $secondary-accent
+
+.bttn-y:hover
+    background-color: #cfad00
+
+.bttn-y:active
+    background-color:  #a38800
+
+
+/** Navbar Style **/
+.Navbar
+    padding: 12px 56px
+
+    .Nabar-logo
+        color: $primary-accent
+        
+
+.pg
+    width: 100%
+    margin-top: 70px
+    padding: 0 100px
+
+    .pg-hl
+        padding: 32px
+
+        .pg-title
+            color: $primary-accent
+
+
+
+/** Media Querys **/
+@media (prefers-color-scheme: light) 
+  :root 
+    color: #213547
+    background-color: #ffffff  
+
+@media ( max-width: 720px  )
+    .Navbar
+        padding: 12px 16px
+
+    .pg
+        margin-top: 53px
+        padding: 0 20px
+
+        .pg-hl
+            padding: 16px
+    

@@ -14,6 +14,12 @@ $secondary-color: #321E50
 $primary-accent: #FF8000
 $secondary-accent: #FFD505
 
+.t-pa
+  color: $primary-accent
+
+.t-sa
+  color: $secondary-accent 
+  
 
 /** Font Types **/
 .tf 
@@ -50,7 +56,8 @@ h1
   line-height: 1.1
 
 /** Button style **/
-.bttn 
+.bttn
+  height: 40px
   border-radius: 25px
   border: 1px solid $primary-color
   text-decoration: none
@@ -99,6 +106,25 @@ h1
         .pg-title
             color: $primary-accent
 
+.section
+  padding: 54px 0
+
+  .section-article
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    padding: 24px 0
+    height: 90vh
+
+    img
+      border-radius: 15px
+  
+  .section-link
+    color: $primary-accent
+    font-size: 1.5em
+
+
 
 
 /** Media Querys **/
@@ -117,4 +143,9 @@ h1
 
         .pg-hl
             padding: 16px
+
+    .section-article
+      align-content: center
     
+    .inverse
+      flex-wrap: wrap-reverse !important

@@ -11965,6 +11965,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.t-pa {
+  color: #FF8000;
+}
+
+.t-sa {
+  color: #FFD505;
+}
+
 /** Font Types **/
 .tf {
   font-family: "Righteous", sans-serif;
@@ -12004,6 +12012,7 @@ h1, .h1 {
 
 /** Button style **/
 .bttn {
+  height: 40px;
   border-radius: 25px;
   border: 1px solid #000041;
   text-decoration: none;
@@ -12058,6 +12067,25 @@ h1, .h1 {
   color: #FF8000;
 }
 
+.section {
+  padding: 54px 0;
+}
+.section .section-article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  height: 90vh;
+}
+.section .section-article img {
+  border-radius: 15px;
+}
+.section .section-link {
+  color: #FF8000;
+  font-size: 1.5em;
+}
+
 /** Media Querys **/
 @media (prefers-color-scheme: light) {
   :root {
@@ -12075,5 +12103,11 @@ h1, .h1 {
   }
   .pg .pg-hl {
     padding: 16px;
+  }
+  .section-article {
+    align-content: center;
+  }
+  .inverse {
+    flex-wrap: wrap-reverse !important;
   }
 }/*# sourceMappingURL=App.css.map */

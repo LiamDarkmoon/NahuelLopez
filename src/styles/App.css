@@ -12057,8 +12057,7 @@ h1, .h1 {
 
 .pg {
   width: 100%;
-  margin-top: 70px;
-  padding: 0 100px;
+  padding: 70px 100px 0 100px;
 }
 .pg .pg-hl {
   padding: 32px;
@@ -12098,8 +12097,7 @@ h1, .h1 {
     padding: 12px 16px;
   }
   .pg {
-    margin-top: 13px;
-    padding: 0 20px;
+    padding: 53px 20px 0 20px;
   }
   .pg .pg-hl {
     padding: 16px;

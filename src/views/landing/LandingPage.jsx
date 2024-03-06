@@ -60,7 +60,7 @@ const LandingPage = () => {
                                 Landing pages must normaly meet a couple of requirements in order fulfill their mision,
                                 or at last just to have &quot;good practices&quot;, showcase the product or service is part of these good practices,
                                 as i show here with the Dice tray a friendly tool for those eager to play rol games right away and without a dice set.
-                                However his function here is to showcase the product and give the customer a first hand tryal.
+                                However his function here is to showcase the product and give the customer a first-hand tryal.
                             </p>
                         </div>
                     </div>
@@ -69,7 +69,7 @@ const LandingPage = () => {
                             <h3 className="tf t-sa"> Sign Up form </h3>
                             <p>
                                 As for the Sign up and sign in forms, those sits on the navbar as buttons,
-                                they&apos;r poped-up being modal windos helping the user no&apos;t to be forced out of the page,
+                                they&apos;r poped-up being modal windows helping the user no&apos;t to be forced out of the page,
                                 neither moved to another one.
                             </p>
                         </div>

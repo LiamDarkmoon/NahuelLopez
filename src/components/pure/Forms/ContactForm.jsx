@@ -14,7 +14,8 @@ const ContactForm = () => {
 
     const handleValues = (values) => {
         newValues = values
-        alert(values)
+        alert(JSON.stringify(values))
+        console.log(newValues)
     } 
 
     return (

@@ -12003,10 +12003,11 @@ textarea.form-control-lg {
   font-weight: 400;
   font-style: normal;
   background-color: #240046;
+  padding-top: 64px;
 }
 
 h1, .h1 {
-  font-size: 5em;
+  font-size: 3em;
   line-height: 1.1;
 }
 
@@ -12048,33 +12049,70 @@ h1, .h1 {
 }
 
 /** Navbar Style **/
-.Navbar {
+.Navbar, .footer-nav {
   padding: 12px 56px;
 }
-.Navbar .Nabar-logo {
-  color: #FF8000;
+.Navbar .Navbar-logo, .footer-nav .Navbar-logo {
+  text-decoration: none;
+  color: #e0aaff;
+  font-size: 1.25em;
+}
+.Navbar .Navbar-link, .Navbar .footer-link, .footer-nav .Navbar-link, .footer-nav .footer-link {
+  text-decoration: none;
+  color: #e0aaff;
+}
+
+.offcanvas {
+  background-color: #240046;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem #FF8000;
+}
+
+.error-message {
+  color: #F70D1A;
+}
+
+.success-message {
+  color: #39FF12;
+}
+
+.warning-messager {
+  color: #FFD505;
 }
 
 .pg {
   width: 100%;
-  padding: 70px 100px 0 100px;
+  padding: 24px 100px 100px;
 }
 .pg .pg-hl {
   padding: 32px;
 }
 .pg .pg-hl .pg-title {
   color: #FF8000;
+  font-size: 5.2em;
+}
+
+.footer-nav {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 24px 100px;
 }
 
 .section {
+  position: relative;
   padding: 54px 0;
+  overflow-x: scroll;
 }
 .section .section-article {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0;
+  padding: 24px 48px;
   height: 90vh;
 }
 .section .section-article img {
@@ -12085,13 +12123,30 @@ h1, .h1 {
   font-size: 1.5em;
 }
 
-/** Media Querys **/
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
+.section::-webkit-scrollbar {
+  display: none;
 }
+
+.swiper-arrow {
+  position: fixed;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  color: #FF8000;
+  font-size: 2em;
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+/** Media Querys **/
 @media (max-width: 720px) {
   .Navbar {
     padding: 12px 16px;

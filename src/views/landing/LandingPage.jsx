@@ -1,13 +1,18 @@
 import { useRef } from "react";
 import Designer from "../../components/pure/Designer";
 
-
 const LandingPage = () => {
 
-    const projects = useRef(null)
+    const projectsRef = useRef(null)
+    const sectionRef = useRef(null)
+
+
+    const sectionSlide = (scrollOffset) => {
+        sectionRef.current.scrollLeft += scrollOffset;
+    }
 
     const scrollToProjects = () => {
-        projects.current.scrollIntoView();
+        projectsRef.current.scrollIntoView();
       };
       
       const scrollToTop = () => {
@@ -15,7 +20,7 @@ const LandingPage = () => {
         };
 
     return (
-        <div id="Landing" className="pg pt-4 text-center">
+        <div id="Landing" className="pg text-center">
             <div className="pg-hl col row align-items-center">
                 <div className="col-12 col-sm-6">
                     <h1 className="pg-title tf"> Hi im </h1>
@@ -36,9 +41,20 @@ const LandingPage = () => {
                     </button>
                 </div>
             </div>
-            <div ref={ projects }>
-                <div className="col-12 section">
-                    <div className="section-article ">
+
+            <div ref={ projectsRef } className="pb-4">
+                <section ref={ sectionRef } className="col-12 section row flex-nowrap">
+                    <button className="swiper-arrow arrow-left p-0" onClick={ () => sectionSlide(-1143) }>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+                        </svg>
+                    </button>
+                    <button className="swiper-arrow arrow-right p-0" onClick={ () => sectionSlide(1143) }>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
+                        </svg>
+                    </button>
+                    <article className="section-article ">
                         <div className="col-12 col-sm-4">
                             <h3 className="tf t-sa"> Landing Page </h3>
                             <p>
@@ -51,8 +67,8 @@ const LandingPage = () => {
                             </p>
                         </div>
                         <img className="col-12 col-sm-7" src="./landing.jpeg" alt="Landing Page"/>
-                    </div>
-                    <div className="section-article inverse">
+                    </article>
+                    <article className="section-article inverse">
                         <img className="col-8 col-sm-5 mx-sm-0 mx-auto" src="./diceroller.jpeg" alt="Dice Tray" />
                         <div className="col-12 col-sm-4">
                             <h3 className="tf t-sa"> Dice Tray: the &quot;Product&quot; </h3>
@@ -63,8 +79,8 @@ const LandingPage = () => {
                                 However his function here is to showcase the product and give the customer a first-hand tryal.
                             </p>
                         </div>
-                    </div>
-                    <div className="section-article">
+                    </article>
+                    <article className="section-article">
                         <div className="col-12 col-sm-4">
                             <h3 className="tf t-sa"> Sign Up form </h3>
                             <p>
@@ -74,11 +90,11 @@ const LandingPage = () => {
                             </p>
                         </div>
                         <img  className="col-12 col-sm-7" src="./sign up.jpeg" alt="Sign Up Form"/>
-                    </div>
+                    </article>
                     <a className="section-link" href="https://liamdarkmoon.github.io/DnDApp/" target="_blank" rel="noopener noreferrer">
                         Click here to visit the App on github
                     </a>
-                </div>
+                </section>
                 <button className="bttn" onClick={ scrollToTop }> Go back to the top </button>
             </div>
         </div>

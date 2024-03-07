@@ -1,14 +1,15 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import ContactFormOffcanvas from './ContactFormOffacanvas';
+import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
     return (
         <Navbar className="Navbar" fixed='top' >
-                <Navbar.Brand className='Navbar-logo tf' href="#home"> Nahuel Lopez </Navbar.Brand>
+                <Link className='Navbar-logo tf' to="/"> Nahuel Lopez </Link>
                 <Nav className="ms-auto">
-                    <Nav.Link href="#features">About</Nav.Link>
+                    <Link className='Navbar-link my-auto' to="/About">About</Link>
                     <ContactFormOffcanvas/>
                 </Nav>
         </Navbar>

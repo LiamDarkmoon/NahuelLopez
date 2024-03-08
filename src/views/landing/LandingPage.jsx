@@ -48,8 +48,8 @@ const LandingPage = () => {
                 </div>
             </div>
 
-            <div ref={ projectsRef } className="d-flex flex-column align-items-center pb-4">
-                <div className="btn-container">
+            <div ref={ projectsRef } className="pb-4">
+                <div className="btn-container col-12 d-flex flex-column align-items-center">
                     <section ref={ sectionRef } className="col-12 section row flex-nowrap">
                         <button className="swiper-arrow arrow-left p-0" onClick={ () => sectionSlide(-sectionRef.current.offsetWidth) }>
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16">
@@ -99,11 +99,11 @@ const LandingPage = () => {
                             <img  className="col-12 col-sm-7" src="./sign up.jpeg" alt="Sign Up Form"/>
                         </article>
                     </section>
+                    <a className="section-link" href="https://liamdarkmoon.github.io/DnDApp/" target="_blank" rel="noopener noreferrer">
+                        Click here to visit the App on github
+                    </a>
+                    <button className="bttn col-6 col-sm-3" onClick={ scrollToTop }> Go back to the top </button>
                 </div>
-                <a className="section-link" href="https://liamdarkmoon.github.io/DnDApp/" target="_blank" rel="noopener noreferrer">
-                    Click here to visit the App on github
-                </a>
-                <button className="bttn col-6 col-sm-3" onClick={ scrollToTop }> Go back to the top </button>
             </div>
         </div>
     );

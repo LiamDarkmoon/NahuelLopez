@@ -12134,7 +12134,7 @@ h1, .h1 {
 
 .swiper-arrow {
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: 50px;
   height: 50px;
   border: none;
@@ -12150,6 +12150,10 @@ h1, .h1 {
 .copyright {
   border-top: 1px solid #e0aaff;
   color: #e0aaff;
+}
+
+.about-p {
+  font-size: 1.2em;
 }
 
 /** Media Querys **/
@@ -12173,5 +12177,8 @@ h1, .h1 {
   .section-link {
     font-size: 1.2em;
     padding-bottom: 48px;
+  }
+  .about-p {
+    font-size: 1em;
   }
 }/*# sourceMappingURL=App.css.map */

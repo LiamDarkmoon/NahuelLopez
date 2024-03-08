@@ -1,18 +1,11 @@
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import Designer from "../../components/pure/Designer";
 
 const LandingPage = () => {
 
     const projectsRef = useRef(null)
     const sectionRef = useRef(null)
-
-    let w100 = window.innerWidth
     
-    useEffect(() => {
-        let sectionWidth = 0;
-        sectionWidth = sectionRef.current.offsetWidth;
-    },)
-
     const sectionSlide = (scrollOffset) => {
         sectionRef.current.scrollLeft += scrollOffset;
     }

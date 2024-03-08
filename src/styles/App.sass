@@ -17,7 +17,7 @@ $secondary-color: #321E50
 $primary-accent: #FF8000
 $secondary-accent: #FFD505
 
-$focus-ring-color:      rgba($primary-accent, $focus-ring-opacity)
+$focus-ring-color: rgba($primary-accent, $focus-ring-opacity)
 
 .t-pa
   color: $primary-accent
@@ -65,7 +65,7 @@ h1
 .bttn
   height: 40px
   border-radius: 25px
-  border: 1px solid $primary-color
+  border: 1px solid $primary-accent
   text-decoration: none
   padding: 8px 16px
   font-size: 1em
@@ -95,6 +95,7 @@ h1
 
 /** Navbar Style **/
 .Navbar, .footer-nav
+    background-color: #24004670
     padding: 12px 56px
 
     .Navbar-logo
@@ -123,7 +124,7 @@ h1
 
 .pg
     width: 100%
-    padding: 24px 100px 100px
+    padding: 24px 100px
 
     .pg-hl
         padding: 32px
@@ -141,7 +142,6 @@ h1
 
 .section
   position: relative
-  padding: 54px 0
   overflow-x: scroll
 
   .section-article
@@ -155,9 +155,10 @@ h1
     img
       border-radius: 15px
   
-  .section-link
-    color: $primary-accent
-    font-size: 1.5em
+.section-link
+  color: $primary-accent
+  font-size: 1.5em
+  padding-bottom: 32px
 
 .section::-webkit-scrollbar
   display: none
@@ -188,13 +189,18 @@ h1
         padding: 12px 16px
 
     .pg
-        padding: 30px 20px 0 20px
+        padding: 16px
 
         .pg-hl
             padding: 0
 
     .section-article
       align-content: center
+      height: 100vh
     
     .reverse
       flex-wrap: wrap-reverse !important
+    
+    .section-link
+      font-size: 1.2em
+      padding-bottom: 48px

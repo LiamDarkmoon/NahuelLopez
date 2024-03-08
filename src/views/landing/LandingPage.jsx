@@ -27,19 +27,19 @@ const LandingPage = () => {
 
     return (
         <div id="Landing" className="pg text-center">
-            <div className="pg-hl col row align-items-center">
-                <div className="col-12 col-sm-6">
+            <div className="pg-hl col row align-items-center justify-content-center ">
+                <div className="col-12 col-sm-6 pb-5 p-sm-0">
                     <h1 className="pg-title tf"> Hi im </h1>
                     <h1 className="pg-title tf"> Nahuel Lopez  </h1>
                     <h2 className="qf"> Ux/Ui Designer & Front-end Developer </h2>
                 </div>
-                <div className="col-10 col-sm-6 mx-auto">
+                <div className="col-10 col-sm-6">
                     <Designer/>
                 </div>
             </div>
             <div className="vh-100 pt-5">
                 <div className="pt-4">
-                    <button className="bttn" onClick={ scrollToProjects }>
+                    <button className="bttn col-6 col-sm-3" onClick={ scrollToProjects }>
                         Check Projects 
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-arrow-down-short" viewBox="0 0 16 16">
                             <path fillRule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
@@ -48,7 +48,7 @@ const LandingPage = () => {
                 </div>
             </div>
 
-            <div ref={ projectsRef } className="pb-4">
+            <div ref={ projectsRef } className="d-flex flex-column align-items-center pb-4">
                 <section ref={ sectionRef } className="col-12 section row flex-nowrap">
                     <button className="swiper-arrow arrow-left p-0" onClick={ () => sectionSlide(-sectionRef.current.offsetWidth) }>
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16">
@@ -98,7 +98,10 @@ const LandingPage = () => {
                         <img  className="col-12 col-sm-7" src="./sign up.jpeg" alt="Sign Up Form"/>
                     </article>
                 </section>
-                <button className="bttn" onClick={ scrollToTop }> Go back to the top </button>
+                <a className="section-link" href="https://liamdarkmoon.github.io/DnDApp/" target="_blank" rel="noopener noreferrer">
+                    Click here to visit the App on github
+                </a>
+                <button className="bttn col-6 col-sm-3" onClick={ scrollToTop }> Go back to the top </button>
             </div>
         </div>
     );

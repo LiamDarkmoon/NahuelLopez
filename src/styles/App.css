@@ -12015,7 +12015,7 @@ h1, .h1 {
 .bttn {
   height: 40px;
   border-radius: 25px;
-  border: 1px solid #000041;
+  border: 1px solid #FF8000;
   text-decoration: none;
   padding: 8px 16px;
   font-size: 1em;
@@ -12050,6 +12050,7 @@ h1, .h1 {
 
 /** Navbar Style **/
 .Navbar, .footer-nav {
+  background-color: rgba(36, 0, 70, 0.4392156863);
   padding: 12px 56px;
 }
 .Navbar .Navbar-logo, .footer-nav .Navbar-logo {
@@ -12084,7 +12085,7 @@ h1, .h1 {
 
 .pg {
   width: 100%;
-  padding: 24px 100px 100px;
+  padding: 24px 100px;
 }
 .pg .pg-hl {
   padding: 32px;
@@ -12104,7 +12105,6 @@ h1, .h1 {
 
 .section {
   position: relative;
-  padding: 54px 0;
   overflow-x: scroll;
 }
 .section .section-article {
@@ -12118,9 +12118,11 @@ h1, .h1 {
 .section .section-article img {
   border-radius: 15px;
 }
-.section .section-link {
+
+.section-link {
   color: #FF8000;
   font-size: 1.5em;
+  padding-bottom: 32px;
 }
 
 .section::-webkit-scrollbar {
@@ -12152,15 +12154,20 @@ h1, .h1 {
     padding: 12px 16px;
   }
   .pg {
-    padding: 30px 20px 0 20px;
+    padding: 16px;
   }
   .pg .pg-hl {
     padding: 0;
   }
   .section-article {
     align-content: center;
+    height: 100vh;
   }
   .reverse {
     flex-wrap: wrap-reverse !important;
+  }
+  .section-link {
+    font-size: 1.2em;
+    padding-bottom: 48px;
   }
 }/*# sourceMappingURL=App.css.map */

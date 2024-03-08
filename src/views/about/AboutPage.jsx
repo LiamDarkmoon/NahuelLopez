@@ -2,8 +2,8 @@
 const AboutPage = () => {
     return (
         <div className="pg text-center">
-            <div className="pg-hl">
-                <h1 className="tf"> I&apos;m Nahuel Lopez </h1>
+            <div className="pg-hl pb-4">
+                <h1 className="tf t-pa"> I&apos;m Nahuel Lopez </h1>
                 <h3 className="qf"> Ux Designer & Front-end developer </h3>
             </div>
             <div className="pg-hl row justify-content-evenly align-items-center">

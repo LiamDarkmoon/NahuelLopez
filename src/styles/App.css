@@ -12050,7 +12050,7 @@ h1, .h1 {
 
 /** Navbar Style **/
 .Navbar, .footer-nav {
-  background-color: rgba(36, 0, 70, 0.4392156863);
+  background-color: rgba(36, 0, 70, 0.5019607843);
   padding: 12px 56px;
 }
 .Navbar .Navbar-logo, .footer-nav .Navbar-logo {
@@ -12145,6 +12145,11 @@ h1, .h1 {
 
 .arrow-right {
   right: 0;
+}
+
+.copyright {
+  border-top: 1px solid #e0aaff;
+  color: #e0aaff;
 }
 
 /** Media Querys **/

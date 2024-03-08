@@ -1,3 +1,5 @@
+import Copyright from "./Copyright";
+
 const iconlist =[
     {
     name: "Linkedin",
@@ -13,8 +15,8 @@ const iconlist =[
 
 const FooterNav = () => {
     return (
-        <div className="footer-nav">
-            <div className="d-flex justify-content-evenly">
+        <div className="footer-nav d-flex flex-column align-items-center">
+            <div className="col-12 d-flex justify-content-evenly pb-2">
             {
                 iconlist.map((icon, i) =>
                     <a key={ i } className="footer-link align-middle py-2" href={ icon.href } target="_blank" rel="noopener noreferrer">
@@ -22,6 +24,7 @@ const FooterNav = () => {
                     </a>
             )}
             </div>
+            <Copyright/>
         </div>
     );
 }
